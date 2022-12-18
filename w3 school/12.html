@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #mt1,
+      #mt2 {
+        height: 300px;
+        width: 400px;
+        background-color: coral;
+      }
+      #pt1,
+      #pt2 {
+        height: 20px;
+        width: 200px;
+        padding: 10px;
+        margin: 5px;
+        background-color: aliceblue;
+        text-align: center;
+        box-sizing: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>javascript add addEventListener</h2>
+    <div id="mt1">
+      <h3>budding</h3>
+      <p id="pt1">click me!</p>
+    </div>
+    <div id="mt2">
+      <h3 class="mt">capturing</h3>
+      <p id="pt2">click me!</p>
+    </div>
+  </body>
+  <script>
+    document.getElementById("mt1").addEventListener("click", function () {
+      alert("srinu is king");
+    });
+    document.getElementById("pt1").addEventListener("click", function () {
+      alert("srinu is a royal");
+    });
+    document.getElementById("mt2").addEventListener("click", function () {
+      alert("srinu has lover boy");
+    });
+    document.getElementById("pt2").addEventListener("click", function () {
+      alert("srinu has a playboy");
+    });
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web api</title>
+  </head>
+  <body>
+    <h1>creat an web page in form tags</h1>
+
+    <p>
+      If the number is less than 100 or greater than 300, an error message will
+      be displayed.
+    </p>
+
+    <input id="d1" type="number" min="100" max="1000" required />
+    <button onclick="myFunction()">OK</button>
+    <p id="demo"></p>
+  </body>
+  <script>
+    function myFunction() {
+      const obj = document.getElementById("d1");
+      if (!obj.checkValidity()) {
+        document.getElementById("demo").innerHTML =
+          "number must be between 100 and 1000";
+
+        document.getElementById("demo").style.color = "red";
+      } else {
+        document.getElementById("demo").style.color = "black";
+        document.getElementById("demo").innerHTML = "input ok";
+      }
+    }
+  </script>
+</html>

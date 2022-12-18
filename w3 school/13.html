@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>json method</h2>
+    <p id="demo"></p>
+  </body>
+  <script>
+    const person = `{"name":"srinu","birth":"2000-08-03","location":"landon"}`;
+    const obj = JSON.parse(person);
+    let text = " ";
+    //obj.birth = new Date(obj.birth);
+    for (const x in obj) {
+      text += obj[x] + ",";
+    }
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</html>
